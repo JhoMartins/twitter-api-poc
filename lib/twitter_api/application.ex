@@ -8,8 +8,7 @@ defmodule TwitterApi.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      # Starts a worker by calling: TwitterApi.Worker.start_link(arg)
-      # {TwitterApi.Worker, arg}
+      Friends.Repo
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
